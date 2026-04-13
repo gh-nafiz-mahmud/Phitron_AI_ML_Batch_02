@@ -14,23 +14,25 @@ import streamlit as st
 # st.write(f"a + b == {a + b}")
 
 # Input Element in streamlit
-
-# test, number, choose option
+# test, number, choose option, button
 
 name = st.text_input("Enter text: ")
 print(type(name))
-# st.write(f"your name is {name}")
 
 age = st.number_input("Enter age: ", value=None, placeholder="type your age")
 print(type(age))
-# st.write(f"Number is: {age}")
 
 password = st.text_input("Enter password: ", type="password")
 print(type(password))
+
+# st.write(f"your name is {name}")
+# st.write(f"Number is: {age}")
 # st.write(f"your password is {password}")
 
 # button
-
 pressed = st.button("Enter To Confirmed", type="primary")
 if pressed:
     st.write(f"Your name is {name}, age {age}, password {password}")
+
+# selecting an option
+
