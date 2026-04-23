@@ -1,1 +1,0 @@
-{"nbformat":4,"nbformat_minor":0,"metadata":{"colab":{"provenance":[],"authorship_tag":"ABX9TyMRW4FNJ3hCTTrVh2TMVPV0"},"kernelspec":{"name":"python3","display_name":"Python 3"},"language_info":{"name":"python"}},"cells":[{"cell_type":"code","source":["import pandas as pd"],"metadata":{"id":"xpkSaHUWwB2K"},"execution_count":null,"outputs":[]}]}
