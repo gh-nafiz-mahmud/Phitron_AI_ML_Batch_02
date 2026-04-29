@@ -18,5 +18,5 @@ response = client.models.generate_content(
 st.subheader(f"Question: {user_content}")
 
 if pressed:
-    st.subheader("Answe:")
+    st.subheader("Answer:")
     st.markdown(response.text)
