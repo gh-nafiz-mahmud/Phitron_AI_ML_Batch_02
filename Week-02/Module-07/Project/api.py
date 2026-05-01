@@ -11,12 +11,13 @@ client = genai.Client(api_key=api)
 
 prompt = "Summarize the picture in note format at max 100 words, make sure to add all markdown to differentiate different section"
 
+
 def note_generator(images):
     response = client.models.generate_content(
-        model = "gemini-3.1-flash-lite-preview",
-        contents = [images, prompt]
+        model="gemini-3.1-flash-lite-preview", contents=[images, prompt]
     )
     return response.text
+
 
 def audio_generator(text):
     speech = gTTS(text, lang="en", slow=False)

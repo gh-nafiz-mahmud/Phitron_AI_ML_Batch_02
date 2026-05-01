@@ -11,8 +11,7 @@ user_content = st.text_input("Ente a question: ")
 pressed = st.button("Enter")
 
 response = client.models.generate_content(
-    model="gemini-3.1-pro-preview",
-    contents=f"{user_content} in 100 words"
+    model="gemini-3.1-pro-preview", contents=f"{user_content} in 100 words"
 )
 
 st.subheader(f"Question: {user_content}")

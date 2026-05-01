@@ -10,7 +10,7 @@ client = genai.Client(api_key=get_api)
 user_content = st.text_input("Enter your prompt: ")
 response = client.models.generate_content(
     model="gemini-3-flash-preview",
-    contents = f"Explain this question in 100 words {user_content}"
+    contents=f"Explain this question in 100 words {user_content}",
 )
 st.divider()
 

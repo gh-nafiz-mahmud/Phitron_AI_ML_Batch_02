@@ -21,14 +21,12 @@
 #         pil_images.append(pil_img)
 
 #     prompt = "Summarize the picture in note format at max 100 words, make sure to add all markdown to differentiate different section"
-    
+
 #     response = client.models.generate_content(
 #         model = "gemini-2.5-flash",
 #         contents = [pil_images, prompt]
 #     )
 
 #     st.markdown(response.text)
-
-
 
 

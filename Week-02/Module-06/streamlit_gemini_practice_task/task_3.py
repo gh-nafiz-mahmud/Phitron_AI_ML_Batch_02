@@ -1,9 +1,6 @@
 import streamlit as st
 
-audio_upload = st.file_uploader(
-    "Enter audio file",
-    ['mp3', 'ogg']
-)
+audio_upload = st.file_uploader("Enter audio file", ["mp3", "ogg"])
 
 play_audio = st.button("Play audio")
 if play_audio:
@@ -12,10 +9,7 @@ if play_audio:
     else:
         st.error("Can't play audio")
 
-video_upload = st.file_uploader(
-    "Enter video file",
-    ['mp4', 'mkv']
-)
+video_upload = st.file_uploader("Enter video file", ["mp4", "mkv"])
 
 play_video = st.button("Play video")
 if play_video:

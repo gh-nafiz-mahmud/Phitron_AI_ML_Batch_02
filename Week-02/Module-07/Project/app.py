@@ -13,7 +13,7 @@ with st.sidebar:
     images = st.file_uploader(
         "Upload the photos of your note",
         ["jpg", "png", "jpeg"],
-        accept_multiple_files=True
+        accept_multiple_files=True,
     )
 
     pil_images = []
@@ -32,11 +32,9 @@ with st.sidebar:
                     st.image(img)
 
     selection = st.selectbox(
-        "Select difficulty level of quiz",
-        ("Easy", "Medium", "High"),
-        index=None
+        "Select difficulty level of quiz", ("Easy", "Medium", "High"), index=None
     )
-    
+
     button_pressed = st.button("Click to active the AI", type="primary")
 
 if button_pressed:
@@ -63,9 +61,7 @@ if button_pressed:
 
                 audio_generate = audio_generator(notes_generate)
                 st.audio(audio_generate)
-        
+
         with st.container(border=True):
             st.subheader(f"Quiz ({selection} level difficulty)")
-            st.markdown('Quiz will be shown here')
-
-        
+            st.markdown("Quiz will be shown here")
